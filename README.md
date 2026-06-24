@@ -1,25 +1,12 @@
 ﻿# 810423104105
 
+
  I developed platform for your company  https://affordmedservice.vercel.app/ ,
- this will help you to maitain the hospital  equipments. 
+ this will help you to maintain the hospital  equipments. 
 
-1. Made notification-app-be with a simple server.js and db.js. 
+1. Made notification-app-be with a  server.js and db.js. 
 
-2. Backend has one route /notifications which support filter (placement/result/event) and pagination.
+2. Backend has one route /notifications which support filter and pagination.
 
 3. Frontend had broken files . Fixed all that and also removed MUI, used plain normal css instead like a beginner would write.
 
-4. Added login page same as the file i gave before, now have two tabs Register and Login. Register calls the evaluation-service /register then /auth and save response in localstorage. Login tab reuse the saved clientID/clientSecret from before and just call /auth again, dont need to register again everytime.
-
-5. App.jsx checks if user already login (checks localstorage), if yes go straight to notification page, if no show login page first.
-
-6. Notification page has logout button which just clear the localstorage and send back to login.
-
-
-frontend:
-cd notification-app-fe
-npm install
-npm run dev
-(opens on localhost:5173)
-
-Note: the evaluation-service link is http not https, so if your browser block it as mixed content try opening normal not https.
